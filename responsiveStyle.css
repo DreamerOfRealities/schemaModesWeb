@@ -11,4 +11,27 @@
   .grid-3 {
     grid-auto-flow: row;
   }
+}
+textarea {
+  box-sizing: border-box;
+  field-sizing: content;
+  width: 100%;
+}
+
+.textarea {
+  display: block;
+  padding: 1px 3px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.longDescription {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.largeTextarea {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }/*# sourceMappingURL=responsiveStyle.css.map */
