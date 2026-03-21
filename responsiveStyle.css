@@ -1,0 +1,14 @@
+:host {
+  --breakpointSmall: 960px;
+}
+
+.grid-3 {
+  display: grid;
+  grid: 33%/auto-flow;
+}
+
+@media (max-width: 960px) {
+  .grid-3 {
+    grid-auto-flow: row;
+  }
+}/*# sourceMappingURL=responsiveStyle.css.map */

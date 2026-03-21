@@ -1,0 +1,12 @@
+$layout-breakpoint-small: 960px
+
+:host
+  --breakpointSmall: #{$layout-breakpoint-small}
+
+.grid-3
+  display: grid
+  grid: 33% / auto-flow
+  
+@media (max-width: $layout-breakpoint-small)
+  .grid-3
+    grid-auto-flow: row
