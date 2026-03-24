@@ -13,7 +13,6 @@
     <!-- icon links in all sizes and systems... -->
 
     <link rel="stylesheet" href="style/responsiveStyle.css">
-    <script src="script/texteditorScript.js"></script>
 
     <title>Schemata-Modus-Modell</title>
   </head>
@@ -23,10 +22,14 @@
     <h1>Schemata-Modus-Modell</h1>
 
     <div>
+        <p id="desc-main">Wir haben keinen Zugriff auf deine Daten, sie befinden sich nur auf deinem Gerät.</p>
+    </div>
+
+    <div>
         <div class="longDescription">Beschreibung 1</div>
         <div class="largeTextarea">
-            <label for="dA-text">Entwickelte erwachsene Person:</label>
-            <textarea name="developedAdult" id="dA-text">
+            <label for="da-text">Entwickelte erwachsene Person:</label>
+            <textarea name="developedAdult" id="da-text">
                 Schreibe hier über dich...
             </textarea>
         </div>
@@ -35,12 +38,14 @@
     <div>
         <div class="longDescription">Beschreibung 2</div>
         <div class="largeTextarea">
-            <label for="cE-text">Gefühlte Anteile:</label>
-            <span class="input textarea" name="childEmotion" id="cE-text" role="textbox" contenteditable>
+            <label for="ce-text">Gefühlte Anteile:</label>
+            <span class="input textarea" name="childEmotion" id="ce-text" role="textbox" contenteditable>
                 Schreibe hier über dich...
             </span>
         </div>
     </div>
     
+  <script src="script/texteditorScript.js"></script>
+
   </body>
 </html>
