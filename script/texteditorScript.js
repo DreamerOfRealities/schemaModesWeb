@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var myContent = require("../content/contentDe.json");
+//import * as myContent from "../content/contentDe.json"
 //NOconst myContent = require("../content/contentDe.json")
 //import * as myContent from await "../content/contentDe.json"
 //import myContent =  require("../content/contentDe.json")
@@ -27,15 +25,14 @@ var aHtmlElement = /** @class */ (function () {
     }
     return aHtmlElement;
 }());
-console.log(myContent);
+//console.log(myContent)
 // Find html elements
-var titleMain = document.getElementById("title-main");
-var descMain = document.getElementById("desc-main");
-var daText = new aHtmlElement("da-text");
-var ceText = new aHtmlElement("ce-text");
+var titleMain = document.getElementById("titleMain");
+var descMain = document.getElementById("descMain");
+var textDa = new aHtmlElement("textDa");
+var textCe = new aHtmlElement("textCe");
 // Populate "static" content
-if (descMain)
-    descMain.textContent = myContent.descMain;
+//if(descMain) descMain.textContent = myContent.descMain
 // Check for webStorage support
 if (typeof (Storage) == undefined) {
     //if (!StorageManager.persist()){

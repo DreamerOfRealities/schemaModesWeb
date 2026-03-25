@@ -29,10 +29,10 @@ class aHtmlElement{
 //console.log(myContent)
 
 // Find html elements
-const titleMain = document.getElementById("title-main")
-const descMain = document.getElementById("desc-main")
-const daText = new aHtmlElement("da-text")
-const ceText = new aHtmlElement("ce-text")
+const titleMain = document.getElementById("titleMain")
+const descMain = document.getElementById("descMain")
+const textDa = new aHtmlElement("textDa")
+const textCe = new aHtmlElement("textCe")
 
 // Populate "static" content
 //if(descMain) descMain.textContent = myContent.descMain

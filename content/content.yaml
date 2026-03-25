@@ -1,4 +1,7 @@
 --- # static content for schemaModes.html
-title: Schemata-Modus-Modell
+titleMain: Schemata-Modus-Modell
 descMain: Wir haben keinen Zugriff auf deine Daten, sie befinden sich nur auf deinem Gerät.
 descDa: Beschreibung entwickelter Erwchsener...
+labelDa: Entwickelte erwachsene Person:
+descCe: Beschreibung child emotion...
+labelCe: Gefühlte Anteile:
