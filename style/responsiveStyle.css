@@ -12,18 +12,13 @@
     grid-auto-flow: row;
   }
 }
-textarea {
-  box-sizing: border-box;
-  field-sizing: content;
-  width: 100%;
-}
-
 .textarea {
   display: block;
   padding: 1px 3px;
   border: 1px solid #ccc;
   font-family: inherit;
   font-size: inherit;
+  min-height: 2rem;
 }
 
 .longDescription {
