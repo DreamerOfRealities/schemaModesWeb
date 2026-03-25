@@ -1,4 +1,4 @@
-import * as myContent from "../content/contentDe.json"
+//import * as myContent from "../content/contentDe.json"
 //NOconst myContent = require("../content/contentDe.json")
 //import * as myContent from await "../content/contentDe.json"
 //import myContent =  require("../content/contentDe.json")
@@ -26,7 +26,7 @@ class aHtmlElement{
 }
 
 
-console.log(myContent)
+//console.log(myContent)
 
 // Find html elements
 const titleMain = document.getElementById("title-main")
@@ -35,7 +35,7 @@ const daText = new aHtmlElement("da-text")
 const ceText = new aHtmlElement("ce-text")
 
 // Populate "static" content
-if(descMain) descMain.textContent = myContent.descMain
+//if(descMain) descMain.textContent = myContent.descMain
 
 // Check for webStorage support
 if (typeof(Storage)==undefined){
