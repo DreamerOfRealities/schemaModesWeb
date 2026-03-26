@@ -1,7 +1,6 @@
 todo:
     -style
     -text content
-    -download/clear/restore buttons?
 
 
 vscode manage:

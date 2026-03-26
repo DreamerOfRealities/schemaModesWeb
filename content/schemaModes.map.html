@@ -85,12 +85,21 @@
         </div>
     </div>
 
-    <div class="grid-3">
-        <a download="mySchemaModes.txt" id="downloadInput">
+    <div class="grid-3 mt-3">
+        <a class="text-center" download="mySchemaModes.txt" id="downloadInput">
             <button type="button">downloadInput</button>
         </a>
-        <button id="clearInput" type="reset">clearInput</button>
-        <input id="loadInput" type="file"/>
+        <div class="text-center">
+            <button id="clearInput" type="reset">clearInput</button>
+        </div>
+        <div class="text-center">
+            <button command="show-modal" commandfor="dialogLoadInput">loadInput</button>
+            <dialog id="dialogLoadInput">
+                <label for="loadInput">loadInput</label>
+                <br>
+                <input id="loadInput" type="file"/>
+            </dialog>
+        </div>
     </div>
 
   <script src="script/texteditorScript.js"></script>
