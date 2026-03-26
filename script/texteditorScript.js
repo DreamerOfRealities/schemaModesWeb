@@ -21,9 +21,19 @@ var aHtmlElement = /** @class */ (function () {
     }
     return aHtmlElement;
 }());
-// Initialize html elements with webStorage
+function collectStorage() {
+    var content = "--- #dynamic, local content for schemaModes.html\n";
+    for (var key in localStorage) {
+        if (key == "key")
+            break; //ignore localStorage function keys (assumes they come last)
+        content += key + ": >\n" + localStorage.getItem(key) + "\n";
+    }
+    return content;
+}
+// Initialize html elements
 var titleMain = document.getElementById("titleMain");
 var descMain = document.getElementById("descMain");
+var linkDownload = document.getElementById("linkDownload");
 var textDevAdult = new aHtmlElement("textDevAdult");
 var textHappyChild = new aHtmlElement("textHappyChild");
 var textHurtChild = new aHtmlElement("textHurtChild");
@@ -40,4 +50,6 @@ if (typeof (Storage) == undefined) {
         descMain.textContent += " " + "Leider unterstützt dein Web-Browser kein webStorage, das heißt dein eingegebener Text wird nicht gespeichert.";
     //throw new Error("Web storage unsupported")
 }
+// Populate download functionality
+linkDownload.setAttribute("href", URL.createObjectURL(new Blob([collectStorage()], { type: 'text/plain' })));
 //# sourceMappingURL=texteditorScript.js.map

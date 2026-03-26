@@ -21,9 +21,20 @@ class aHtmlElement{
     }
 }
 
-// Initialize html elements with webStorage
+function collectStorage(): string {
+    let content: string = "--- #dynamic, local content for schemaModes.html\n"
+    for (let key in localStorage){
+        if (key=="key") break; //ignore localStorage function keys (assumes they come last)
+        content += key + ": >\n" + localStorage.getItem(key) + "\n"
+    }
+    return content
+}
+
+// Initialize html elements
 const titleMain = document.getElementById("titleMain")
 const descMain = document.getElementById("descMain")
+const linkDownload = document.getElementById("linkDownload")
+
 const textDevAdult = new aHtmlElement("textDevAdult")
 const textHappyChild = new aHtmlElement("textHappyChild")
 const textHurtChild = new aHtmlElement("textHurtChild")
@@ -42,4 +53,5 @@ if (typeof(Storage)==undefined){
     //throw new Error("Web storage unsupported")
 }
 
-    
+// Populate download functionality
+linkDownload.setAttribute("href", URL.createObjectURL(new Blob([collectStorage()], { type: 'text/plain' })))
