@@ -3,7 +3,7 @@
     "commands": [
       {
         // Run whenever .map.html files are saved
-        "match": "\\.map.html$",
+        "match": "(\\.map.html|content.yaml)$",
         "cmd": "echo '${fileBasename}' saved. && python ./tools/transpileHtml.py",
       },
     ],
