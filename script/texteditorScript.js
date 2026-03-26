@@ -1,8 +1,3 @@
-//import * as myContent from "../content/contentDe.json"
-//NOconst myContent = require("../content/contentDe.json")
-//import * as myContent from await "../content/contentDe.json"
-//import myContent =  require("../content/contentDe.json")
-//await import("../content/contentDe.json")
 var aHtmlElement = /** @class */ (function () {
     function aHtmlElement(myId) {
         this.cont = "Schreibe hier über dich...";
@@ -26,13 +21,14 @@ var aHtmlElement = /** @class */ (function () {
     return aHtmlElement;
 }());
 //console.log(myContent)
-// Find html elements
+// Initialize html elements with webStorage
 var titleMain = document.getElementById("titleMain");
 var descMain = document.getElementById("descMain");
-var textDa = new aHtmlElement("textDa");
-var textCe = new aHtmlElement("textCe");
-// Populate "static" content
-//if(descMain) descMain.textContent = myContent.descMain
+var textDevAdult = new aHtmlElement("textDevAdult");
+var textHappyChild = new aHtmlElement("textHappyChild");
+var textHurtChild = new aHtmlElement("textHurtChild");
+var textAngryChild = new aHtmlElement("textAngryChild");
+var textIntExp = new aHtmlElement("textIntExp");
 // Check for webStorage support
 if (typeof (Storage) == undefined) {
     //if (!StorageManager.persist()){

@@ -1,8 +1,3 @@
-//import * as myContent from "../content/contentDe.json"
-//NOconst myContent = require("../content/contentDe.json")
-//import * as myContent from await "../content/contentDe.json"
-//import myContent =  require("../content/contentDe.json")
-//await import("../content/contentDe.json")
  
 class aHtmlElement{
     id: string //must be equal to id of HTMLElement
@@ -28,14 +23,15 @@ class aHtmlElement{
 
 //console.log(myContent)
 
-// Find html elements
+// Initialize html elements with webStorage
 const titleMain = document.getElementById("titleMain")
 const descMain = document.getElementById("descMain")
-const textDa = new aHtmlElement("textDa")
-const textCe = new aHtmlElement("textCe")
+const textDevAdult = new aHtmlElement("textDevAdult")
+const textHappyChild = new aHtmlElement("textHappyChild")
+const textHurtChild = new aHtmlElement("textHurtChild")
+const textAngryChild = new aHtmlElement("textAngryChild")
+const textIntExp = new aHtmlElement("textIntExp")
 
-// Populate "static" content
-//if(descMain) descMain.textContent = myContent.descMain
 
 // Check for webStorage support
 if (typeof(Storage)==undefined){

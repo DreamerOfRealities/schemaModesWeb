@@ -12,6 +12,10 @@
     grid-auto-flow: row;
   }
 }
+.container {
+  display: grid;
+}
+
 .textarea {
   display: block;
   padding: 1px 3px;
