@@ -4,18 +4,14 @@
 
 .grid-3 {
   display: grid;
-  grid: 33%/auto-flow;
+  grid-template-columns: 33.3333333333% 33.3333333333% 33.3333333333%;
 }
 
 @media (max-width: 960px) {
   .grid-3 {
-    grid-auto-flow: row;
+    grid-template-columns: auto;
   }
 }
-.container {
-  display: grid;
-}
-
 .textarea {
   display: block;
   padding: 1px 3px;
@@ -23,6 +19,7 @@
   font-family: inherit;
   font-size: inherit;
   min-height: 2rem;
+  white-space: pre-wrap;
 }
 
 .longDescription {

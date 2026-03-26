@@ -1,3 +1,4 @@
+// custom class to handle webStorage interaction with htmlElements
 var aHtmlElement = /** @class */ (function () {
     function aHtmlElement(myId) {
         this.cont = "Schreibe hier über dich...";
@@ -20,7 +21,6 @@ var aHtmlElement = /** @class */ (function () {
     }
     return aHtmlElement;
 }());
-//console.log(myContent)
 // Initialize html elements with webStorage
 var titleMain = document.getElementById("titleMain");
 var descMain = document.getElementById("descMain");
@@ -29,6 +29,9 @@ var textHappyChild = new aHtmlElement("textHappyChild");
 var textHurtChild = new aHtmlElement("textHurtChild");
 var textAngryChild = new aHtmlElement("textAngryChild");
 var textIntExp = new aHtmlElement("textIntExp");
+var textFawn = new aHtmlElement("textFawn");
+var textFlight = new aHtmlElement("textFlight");
+var textFight = new aHtmlElement("textFight");
 // Check for webStorage support
 if (typeof (Storage) == undefined) {
     //if (!StorageManager.persist()){

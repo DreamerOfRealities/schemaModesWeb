@@ -1,4 +1,5 @@
- 
+
+// custom class to handle webStorage interaction with htmlElements
 class aHtmlElement{
     id: string //must be equal to id of HTMLElement
     elem: HTMLElement
@@ -20,9 +21,6 @@ class aHtmlElement{
     }
 }
 
-
-//console.log(myContent)
-
 // Initialize html elements with webStorage
 const titleMain = document.getElementById("titleMain")
 const descMain = document.getElementById("descMain")
@@ -31,6 +29,9 @@ const textHappyChild = new aHtmlElement("textHappyChild")
 const textHurtChild = new aHtmlElement("textHurtChild")
 const textAngryChild = new aHtmlElement("textAngryChild")
 const textIntExp = new aHtmlElement("textIntExp")
+const textFawn = new aHtmlElement("textFawn")
+const textFlight = new aHtmlElement("textFlight")
+const textFight = new aHtmlElement("textFight")
 
 
 // Check for webStorage support
