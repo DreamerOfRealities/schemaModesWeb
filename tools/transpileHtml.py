@@ -18,3 +18,5 @@ with Path().absolute().joinpath("content\schemaModes.map.html").open() as hMap:
 
 # Write new html to file
 Path().absolute().joinpath("schemaModes.html").write_text("".join(hMap))
+
+print("Transpiled .map.html successfully.")

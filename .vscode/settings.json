@@ -1,0 +1,11 @@
+{
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        // Run whenever .map.html files are saved
+        "match": "\\.map.html$",
+        "cmd": "echo '${fileBasename}' saved. && python ./tools/transpileHtml.py",
+      },
+    ],
+  },
+}
