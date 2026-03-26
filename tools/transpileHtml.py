@@ -10,7 +10,7 @@ with Path().absolute().joinpath("content\content.yaml").open() as cont:
             contDict[newVar[0]] = "".join(newVar[1:len(newVar)]) #note: not sure if treating only first colon as escape char is yaml conform
 
 # Read html map file and replace keys from dict
-with Path().absolute().joinpath("content\schemaModes.html").open() as hMap:
+with Path().absolute().joinpath("content\schemaModes.map.html").open() as hMap:
     hMap = hMap.readlines()
     for row in range(0, len(hMap)): #check each row...
         for key in contDict.keys(): #...for each key...
