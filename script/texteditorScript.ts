@@ -30,10 +30,12 @@ function collectStorage(): string {
     return content
 }
 
+
 // Initialize html elements
 const titleMain = document.getElementById("titleMain")
 const descMain = document.getElementById("descMain")
-const linkDownload = document.getElementById("linkDownload")
+const downloadInput = document.getElementById("downloadInput")
+const clearInput = document.getElementById("clearInput")
 
 const textDevAdult = new aHtmlElement("textDevAdult")
 const textHappyChild = new aHtmlElement("textHappyChild")
@@ -53,5 +55,6 @@ if (typeof(Storage)==undefined){
     //throw new Error("Web storage unsupported")
 }
 
-// Populate download functionality
-linkDownload.setAttribute("href", URL.createObjectURL(new Blob([collectStorage()], { type: 'text/plain' })))
+// Populate button functionality
+downloadInput.setAttribute("href", URL.createObjectURL(new Blob([collectStorage()], { type: 'text/plain' })))
+clearInput.setAttribute("onclick", "localStorage.clear(); location.reload()")

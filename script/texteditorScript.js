@@ -30,10 +30,15 @@ function collectStorage() {
     }
     return content;
 }
+function clearStorage() {
+    localStorage.clear();
+    location.reload();
+}
 // Initialize html elements
 var titleMain = document.getElementById("titleMain");
 var descMain = document.getElementById("descMain");
-var linkDownload = document.getElementById("linkDownload");
+var downloadInput = document.getElementById("downloadInput");
+var clearInput = document.getElementById("clearInput");
 var textDevAdult = new aHtmlElement("textDevAdult");
 var textHappyChild = new aHtmlElement("textHappyChild");
 var textHurtChild = new aHtmlElement("textHurtChild");
@@ -50,6 +55,7 @@ if (typeof (Storage) == undefined) {
         descMain.textContent += " " + "Leider unterstützt dein Web-Browser kein webStorage, das heißt dein eingegebener Text wird nicht gespeichert.";
     //throw new Error("Web storage unsupported")
 }
-// Populate download functionality
-linkDownload.setAttribute("href", URL.createObjectURL(new Blob([collectStorage()], { type: 'text/plain' })));
+// Populate button functionality
+downloadInput.setAttribute("href", URL.createObjectURL(new Blob([collectStorage()], { type: 'text/plain' })));
+clearInput.setAttribute("onclick", "localStorage.clear(); location.reload()");
 //# sourceMappingURL=texteditorScript.js.map
