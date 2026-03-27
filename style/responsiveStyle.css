@@ -28,14 +28,23 @@ button {
   margin: 0.5rem;
 }
 
-.grid-3 {
+.grid-3, .grid-3x2 {
   display: grid;
-  grid-template-columns: 33.3333333333% 33.3333333333% 33.3333333333%;
+  grid-template-columns: repeat(3, 33.3333333333%);
+}
+
+.grid-3x2 {
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: column;
 }
 
 @media (max-width: 960px) {
   .grid-3 {
     grid-template-columns: auto;
+  }
+  .grid-3x2 {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, auto);
   }
 }
 .textarea {
@@ -69,6 +78,10 @@ button {
 
 .mt-3 {
   margin-top: 1rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
 }
 
 .px-25BAK {

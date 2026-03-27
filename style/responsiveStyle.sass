@@ -29,13 +29,23 @@ button
   padding: .5rem
   margin: .5rem
 
-.grid-3
+.grid-3, .grid-3x2
   display: grid
-  grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3)
+  grid-template-columns: repeat(3, calc(100%/3))
+
+.grid-3x2
+  //display: grid
+  //grid-template-columns: repeat(3, calc(100%/3))
+  grid-template-rows: repeat(2, auto)
+  grid-auto-flow: column
   
 @media (max-width: $layout-breakpoint-small)
   .grid-3
     grid-template-columns: auto
+  .grid-3x2
+    grid-template-columns: 100%
+    grid-template-rows: repeat(6, auto)
+    //grid-auto-flow: column
 
 .textarea
   display: block
@@ -65,6 +75,9 @@ button
 
 .mt-3
   margin-top: 1rem !important
+
+.mb-4
+  margin-bottom: 1.5rem !important
 
 .px-25BAK
   padding-left: .75rem !important
