@@ -1,19 +1,21 @@
 --- # static content for schemaModes.html
 titleMain: Schemata-Modus-Modell
-descMain: Wir haben keinen Zugriff auf deine Daten, sie befinden sich nur auf deinem Gerät.
-descDevAdult: Beschreibung entwickelter Erwchsener...
-labelDevAdult: Entwickelte erwachsene Person:
-descHappyChild: Beschreibung happy child emotion...
-labelHappyChild: Glückliche "kindliche" Seite:
-descHurtChild: Beschreibung hurt child emotion...
+descMain: Die Schema-Therapie nach Jeffrey E. Young ist eine Form der Psychotherapie. Je nachdem, in welchem Persönlichkeits-Modus wir uns befinden, kommen andere Umgangs-Schemata zum Tragen. Nutze diese Webseite, um dir dein Persönlichkeitsbild zu erarbeiten, und dich dadurch besser zu verstehen. Wir haben keinen Zugriff auf deine Daten, sie befinden sich nur auf deinem Gerät.
+descDevAdult: Was ist wirklich deines an dir heute? Welche Fähigkeiten, Erlerntes, innere Kräfte und positive Eigenschaften machen dich aus? Hier geht es darum, den entwickelten Teil deiner Persönlichkeit zu finden, der als starke Seite deinen vernachlässigten Anteilen helfen kann.
+labelDevAdult: Entwickelte, erwachsene Person:
+descHappyChild: Was macht dein "inneres Kind" glücklich? Wo findest du einfache Freude, Spaß und Zufriedenheit? Hier finden wir Lockerheit und einen direkten Zugang zu unseren Geühlen. In diesem Modus fühlt sich das Leben leicht an.
+labelHappyChild: Glückliche, "kindliche" Seite:
+descCare: Unsere Vergangenheit beeinflusst unsere Persönlichkeit heute. Wenn Bedürfnisse früher nicht erfüllt worden sind, können wir das heute noch spüren - mit dem Unterschied, dass wir nun mehr Möglichkeiten besitzen, uns selbst um diese Anteile zu kümmern. Daneben gibt es ebenso oft noch "Stimmen" in uns, die uns sagen, was wir zu tun und zu lassen hätten. Hier gilt es herauszufinden, was uns selbst wichtig ist und was uns nur gesagt wurde, heute aber gar nicht mehr stimmt. Sowohl die emotionalen Anteile, wie auch die "Stimmen" in uns zu kennen, erlaubt es uns einen besseren Umgang damit als Teil von uns zu finden. Unsere Gefühle brauchen Anerkennung, und wenn du die "Stimmen" erkennst, weißt du, dass du heute eine Wahl hast.
+descHurtChild: Welche verletzten Seiten spielen eine Rolle? Was fühlt sich in dir verlassen, misshandelt, vernachlässigt oder zurückgewiesen an? Früher unerfüllte Grundbedürfnisse nach Bindung, Anerkennung und Wertschätzung wirken sich noch heute auf uns aus.
 labelHurtChild: Verletzte Anteile:
-descAngryChild: Beschreibung angry child emotion...
+descAngryChild: Was ärgert dich innerlich? Wo fühlst du dich so aufgebracht, dass dir eigentlich egal ist, was das für Folgen hat? Früher unerfüllte Grundbedürfnisse nach Unabhängigkeit, Handlungsfähigkeit und Orientierung wirken sich ebenfalls noch heute auf uns aus.
 labelAngryChild: Ärgerliche Anteile:
-descIntExp: Beschreibung internalized expectations...
-labelIntExp: Fremde Anteile:
-descFawn: Beschreibung fawn mode...
+descIntExp: Welche Erwartungen an dich fühlst du in dir? Und welche Urteile über dich hörst du in dir? Diese Forderungen und Ablehnungen in uns sind oft "fremde Stimmen" uns wichtiger Personen, die uns früher eingeprägt wurden, heute aber nicht mehr zu dir als erwachsene Person passen.
+labelIntExp: Äußere Anteile:
+descSurvival: Schaffen wir es nicht, uns um unsere vernachlässigten Gefühle zu kümmern und die äußeren Anteile wahrzunehmen aber einzuordnen, entsteht ein "Druck" in uns. Dieser entsteht durch einen Konflikt zwischen diesen beiden Anteilen, und wenn wir diesen nicht rechtzeitig stoppen, fallen wir in Schutzhaltungen. Diese Schutzhaltungen haben früher unser Überleben gesichert und sind deshalb sehr wichtig für uns. Dennoch sind es Verhaltensweisen, die wir heute selbst kontrollieren wollen. Deshalb müssen wir verstehen, wie diese Modi bei uns aussehen, um uns zu stoppen, wenn wir nicht reinfallen wollen, und wieder herausfinden zu können, wenn wir bemerken, dass wir drin sind.
+descFawn: Wie verhältst du dich, wenn du anderen Vorrang gibst? Wenn du dich kümmerst, ohne dich selbst zu sehen? Hier spielt hintergründig die Bekämpfung von Angst und Schuldgefühlen eine Rolle. Zudem ist es der einzige Modus, der dir früher geblieben ist, wenn du weder fliehen, noch dich wehren konntest.
 labelFawn: Anpassung/Unterordnung:
-descFlight: Beschreibung flight mode.. .
+descFlight: Wie entfliehst du unangenehmen Situationen? Wie vermeidest du Auseinandersetzungen? Hier gibt es ganz verschiedene Mechanismen, übertriebene Sachlichkeit, Selbstbetäubung, Ablenkung und Abweisung helfen dabei, sich nicht mit den wirklichen Gefühlen auseinandersetzen zu müssen.
 labelFlight: Vermeidung/Flucht:
-descFight: Beschreibung fight mode...
+descFight: Wie kämpfst du für dein Recht? Wie beweist du dich? Hier versuchst du auszugleichen, was dir abgesprochen wurde. Das kann passieren, indem du dich größer machst, als du bist, und das kann ein Perfektionsanspruch sein. Ebenso kann es auch das Attackieren, Täuschen oder Verletzen anderer sein. All dieses Verhalten gibt dir ein Gefühl von Kontrolle, selbst wenn es unbeabsichtigt von dir auftritt.
 labelFight: Leistung/Kampf:
