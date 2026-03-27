@@ -3,6 +3,28 @@ $layout-breakpoint-small: 960px
 :host
   --breakpointSmall: #{$layout-breakpoint-small}
 
+body
+  background: white
+  // background: radial-gradient(circle, rgba(33, 37, 41, 0.1) 0%, #ffffff 100%)
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(33, 37, 41, 0.1) 50%, rgba(255, 255, 255, 0) 100%)
+
+p
+  max-width: $layout-breakpoint-small
+  margin-top: 0
+  margin-bottom: .5rem
+
+h2,h3
+  margin-top: .5rem
+  margin-bottom: .5rem
+
+label
+  font-style: italic
+  padding-left: 3px
+  //font-weight: bold
+  //display: block
+  //text-align: center
+  //padding-left: .3rem
+
 button
   padding: .5rem
   margin: .5rem
@@ -25,15 +47,29 @@ button
   white-space: pre-wrap
     
 .longDescription
-  margin-top: 1rem
+  //margin-top: 1rem
   margin-bottom: .5rem
+  //max-width: $layout-breakpoint-small
 
 .largeTextarea
-  margin-left: .5rem
-  margin-right: .5rem
+  margin-top: .2rem
+  margin-bottom: 1rem
+  background: white
+
+.box-center
+  display: flex
+  justify-content: center
 
 .text-center
   text-align: center !important
 
 .mt-3
   margin-top: 1rem !important
+
+.px-25BAK
+  padding-left: .75rem !important
+  padding-right: .75rem !important
+
+.px-4
+  padding-left: 1.5rem !important
+  padding-right: 1.5rem !important

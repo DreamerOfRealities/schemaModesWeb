@@ -77,7 +77,7 @@ function populateStorage(): void {
 }
 
 // Initialize html elements
-const titleMain = document.getElementById("titleMain")
+//DEP const titleMain = document.getElementById("titleMain")
 const descMain = document.getElementById("descMain")
 const downloadInput = document.getElementById("downloadInput")
 const clearInput = document.getElementById("clearInput")

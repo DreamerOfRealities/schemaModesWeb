@@ -19,92 +19,114 @@
 
   <body>
 
-    <h1 id="titleMain">titleMain</h1>
+    <h1 class="text-center px-4">titleMain</h1>
 
-    <div>
+    <div class="box-center px-4">
         <p id="descMain">descMain</p>
     </div>
 
-    <div>
+    <h2 class="text-center px-4">titleFullAdult</h2>
+    <div class="box-center px-4">
+        <p id="descCare">descFullAdult</p>
+    </div>
+
+    <div class="px-4">
         <div class="longDescription">descDevAdult</div>
-        <div class="largeTextarea">
+        <div class="px-4">
             <label for="textDevAdult">labelDevAdult</label>
-            <span class="input textarea" name="developedAdult" id="textDevAdult" role="textbox" contenteditable></span>
+            <div class="largeTextarea">
+                <span class="input textarea" name="developedAdult" id="textDevAdult" role="textbox" contenteditable></span>
+            </div>
         </div>
-        <div class="largeTextarea">
+        <div class="longDescription">descHappyChild</div>
+        <div class="px-4">
             <label for="textHappyChild">labelHappyChild</label>
-            <span class="input textarea" name="happyChild" id="textHappyChild" role="textbox" contenteditable></span>
+            <div class="largeTextarea">
+                <span class="input textarea" name="happyChild" id="textHappyChild" role="textbox" contenteditable></span>
+            </div>
         </div>
     </div>
 
-    <div>
+    <h2 class="text-center px-4">titleCare</h2>
+    <div class="box-center px-4">
         <p id="descCare">descCare</p>
     </div>
 
     <div class="grid-3">
-        <div>
+        <div class="px-4">
+            <h3>titleHurtChild</h3>
             <div class="longDescription">descHurtChild</div>
+            <label for="textHurtChild">labelHurtChild</label>
             <div class="largeTextarea">
-                <label for="textHurtChild">labelHurtChild</label>
                 <span class="input textarea" name="hurtChild" id="textHurtChild" role="textbox" contenteditable></span>
             </div>
         </div>
-        <div>
+        <div class="px-4">
+            <h3>titleAngryChild</h3>
             <div class="longDescription">descAngryChild</div>
+            <label for="textAngryChild">labelAngryChild</label>
             <div class="largeTextarea">
-                <label for="textAngryChild">labelAngryChild</label>
                 <span class="input textarea" name="angryChild" id="textAngryChild" role="textbox" contenteditable></span>
             </div>
         </div>    
-        <div>
+        <div class="px-4">
+            <h3>titleIntExp</h3>
             <div class="longDescription">descIntExp</div>
+            <label for="textIntExp">labelIntExp</label>
             <div class="largeTextarea">
-                <label for="textIntExp">labelIntExp</label>
                 <span class="input textarea" name="internalizedExpectations" id="textIntExp" role="textbox" contenteditable></span>
             </div>
         </div>
     </div>
 
-    <div>
+    <h2 class="text-center px-4">titleSurvival</h2>
+    <div class="box-center px-4">
         <p id="descSurvival">descSurvival</p>
     </div>
 
     <div class="grid-3">
-        <div>
+        <div class="px-4">
+            <h3>titleFawn</h3>
             <div class="longDescription">descFawn</div>
+            <label for="textFawn">labelFawn</label>
             <div class="largeTextarea">
-                <label for="textFawn">labelFawn</label>
                 <span class="input textarea" name="fawnMode" id="textFawn" role="textbox" contenteditable></span>
             </div>
         </div>
-        <div>
+        <div class="px-4">
+            <h3>titleFlight</h3>
             <div class="longDescription">descFlight</div>
+            <label for="textFlight">labelFlight</label>
             <div class="largeTextarea">
-                <label for="textFlight">labelFlight</label>
                 <span class="input textarea" name="flightMode" id="textFlight" role="textbox" contenteditable></span>
             </div>
         </div>    
-        <div>
+        <div class="px-4">
+            <h3>titleFight</h3>
             <div class="longDescription">descFight</div>
+            <label for="textFight">labelFight</label>
             <div class="largeTextarea">
-                <label for="textFight">labelFight</label>
                 <span class="input textarea" name="fightMode" id="textFight" role="textbox" contenteditable></span>
             </div>
         </div>
     </div>
 
     <div class="grid-3 mt-3">
-        <a class="text-center" download="mySchemaModes.txt" id="downloadInput">
+        <a class="text-center px-4" download="mySchemaModes.txt" id="downloadInput">
             <button type="button">downloadInput</button>
         </a>
-        <div class="text-center">
-            <button id="clearInput" type="reset">clearInput</button>
+        <div class="text-center px-4">
+            <button command="show-modal" commandfor="dialogClearInput">clearInput</button>
+            <dialog id="dialogClearInput">
+                <label for="clearInput">defConfirm</label><br>
+                <button id="clearInput" type="reset">clearInput</button>
+                <button commandfor="dialogClearInput" command="close">defBack</button>
+            </dialog>
         </div>
-        <div class="text-center">
+        <div class="text-center px-4">
             <button command="show-modal" commandfor="dialogLoadInput">loadInput</button>
             <dialog id="dialogLoadInput">
-                <label for="loadInput">loadInput</label>
-                <br>
+                <label for="loadInput">loadInput</label><br>
                 <input id="loadInput" type="file"/>
             </dialog>
         </div>

@@ -70,7 +70,7 @@ function populateStorage() {
     });
 }
 // Initialize html elements
-var titleMain = document.getElementById("titleMain");
+//DEP const titleMain = document.getElementById("titleMain")
 var descMain = document.getElementById("descMain");
 var downloadInput = document.getElementById("downloadInput");
 var clearInput = document.getElementById("clearInput");
