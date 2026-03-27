@@ -1,20 +1,31 @@
 $layout-breakpoint-small: 960px
+$color-dark: rgb(33 37 41)
+$color-light: rgb(248, 249, 250)
 
-:host
-  --breakpointSmall: #{$layout-breakpoint-small}
+//:host
+//  --breakpointSmall: #{$layout-breakpoint-small}
 
 body
   background: white
   // background: radial-gradient(circle, rgba(33, 37, 41, 0.1) 0%, #ffffff 100%)
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(33, 37, 41, 0.1) 50%, rgba(255, 255, 255, 0) 100%)
+  //background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(33, 37, 41, 0.05) 50%, rgba(255, 255, 255, 0) 100%)
+  //background: linear-gradient(0deg, transparent 0%, rgba(33, 37, 41, 0.05) 50%, transparent 100%)
+  //background: linear-gradient(0deg, $color-light 0%, $color-dark 50%, $color-light 100%)
+  //background: linear-gradient(0deg, transparent 0%, rgba($color-dark, 0.05) 50%, transparent 100%)
+  margin: 0
+  color: $color-dark
 
 p
   max-width: $layout-breakpoint-small
   margin-top: 0
   margin-bottom: .5rem
 
+h1
+  margin-top: 5rem
+  margin-bottom: 3rem
+
 h2,h3
-  margin-top: .5rem
+  margin-top: 2rem
   margin-bottom: .5rem
 
 label
@@ -28,6 +39,9 @@ label
 button
   padding: .5rem
   margin: .5rem
+
+.background-dimmed
+  background: $color-light
 
 .grid-3, .grid-3x2
   display: grid
@@ -46,6 +60,9 @@ button
     grid-template-columns: 100%
     grid-template-rows: repeat(6, auto)
     //grid-auto-flow: column
+
+.nav-elem
+  background: $color-dark
 
 .textarea
   display: block
@@ -79,10 +96,30 @@ button
 .mb-4
   margin-bottom: 1.5rem !important
 
-.px-25BAK
+.pt-0
+  padding-top: 1px !important
+
+.pt-3
+  padding-top: 1rem !important
+
+.pb-4
+  padding-bottom: 1.5rem !important
+
+.pb-5
+  padding-bottom: 3rem !important
+
+.px-25
   padding-left: .75rem !important
   padding-right: .75rem !important
 
 .px-4
   padding-left: 1.5rem !important
   padding-right: 1.5rem !important
+
+.py-1
+  padding-top: .25rem !important
+  padding-bottom: .25rem !important
+
+.py-4
+  padding-top: 1.5rem !important
+  padding-bottom: 1.5rem !important
